@@ -18,8 +18,7 @@ const router = createBrowserRouter([
     children:[
       {
         index:true,
-        Component: Home,
-        hydrateFallbackElement: <Loading/>
+        Component: Home
       },
       {
         path:"/about",
@@ -27,7 +26,17 @@ const router = createBrowserRouter([
       },
       {
         path:"/movies",
-        Component: Movies
+        Component: Movies,
+        loader: async()=>{
+          const url = await fetch("https://api.tvmaze.com/shows")
+          // console.log(url)
+          if(!url.ok){
+            throw new Error(" Movies data fetching problem")
+          }
+          return url.json();
+          
+        },
+        hydrateFallbackElement: <Loading/>
       },
       {
         path:"*",
