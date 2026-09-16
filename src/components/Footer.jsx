@@ -21,7 +21,7 @@ const Footer = () => {
               <p className="py-6 text-sm text-center dark:text-gray-400">
                 © 2026 Movie Zone. All rights reserved.
               </p>
-              <div className="flex gap-4 items-center justify-between font-semibold text-lg">
+              <div className="flex flex-col gap-4 items-center justify-between font-semibold text-lg md:flex-row">
                 <h3>
                   Follow us on:
                 </h3>
