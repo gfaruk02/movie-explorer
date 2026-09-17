@@ -37,14 +37,14 @@ const MovieCard = ({movie}) => {
      {  showModel && 
         (
             <dialog open className="modal">
-                <div className="modal-box max-w-2xl">
+                <div className="modal-box max-w-2xl ">
                     <div method="dialog">
                         {/* if there is a button in form, it will close the modal */}
                         <button onClick={() => setShowModel(false)} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-gray-800 hover:bg-red-700">✕</button>
                     </div>
                     <div className="grid md:grid-cols-2">
-                        <figure>
-                            <img className="h-full max-h-[500px] w-full object-cover"
+                        <figure className="w-full">
+                            <img className="h-full max-h-[500px] w-full object-cover pt-2"
                             src={movie.image?.original}
                             alt={movie.name} />
                         </figure>

@@ -6,7 +6,7 @@ const Movies = () => {
 
   const loadMovies = useLoaderData()
   const [search, setSearch] = useSearchParams()
-  const query = search.get("q");
+  const query = search.get("q") || "";
   const handelSearch = (e) =>{
     const value = e.target.value;
     if(value.trim()){
@@ -18,7 +18,7 @@ const Movies = () => {
   return (
     <>
       <div className="p-5 md:mt-6">
-        <label className="input w-full max-w-2xl mx-auto flex">
+        <label className="input w-full max-w-md mx-auto flex">
            <svg
               className="h-[1em] opacity-50"
               xmlns="http://www.w3.org/2000/svg"
