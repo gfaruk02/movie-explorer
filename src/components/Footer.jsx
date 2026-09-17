@@ -14,40 +14,34 @@ const Footer = () => {
 
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             
-             <Link to="">
-         <img className="h-10 w-auto sm:h-12 md:h-14 lg:h-17 object-contain" src="https://i.ibb.co.com/BVfTb7jx/movie-explorer.png" alt="Movie Explorer" />
-        </Link>
+            <Link to="">
+              <img className="h-10 w-auto sm:h-12 md:h-14 lg:h-17 object-contain" src="https://i.ibb.co.com/BVfTb7jx/movie-explorer.png" alt="Movie Explorer" />
+            </Link>
 
-              <p className="py-6 text-sm text-center dark:text-gray-400">
-                © 2026 Movie Explorer. All rights reserved.
-              </p>
-              <div className="flex flex-col gap-4 items-center justify-between font-semibold text-lg md:flex-row">
-                <h3>
-                  Follow us on:
-                </h3>
-                <div className="flex items-center  gap-4">
-                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
-                     <FaFacebookF size={18} />
-                  </a>
-                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
-                      <FaTwitter size={18} />
-                  </a>
-                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
-                     <FaInstagram size={18} />
-                  </a>
-                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
-                       <FaYoutube size={18} />
-                  </a>
-
-                </div>
+            <p className="py-6 text-sm text-center dark:text-gray-400">
+              © 2026 Movie Explorer. All rights reserved.
+            </p>
+            <div className="flex flex-col gap-4 items-center justify-between font-semibold text-lg md:flex-row">
+              <h3>
+                Follow us on:
+              </h3>
+              <div className="flex items-center  gap-4">
+                <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
+                  <FaFacebookF size={18} />
+                </a>
+                <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
+                  <FaTwitter size={18} />
+                </a>
+                <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
+                  <FaInstagram size={18} />
+                </a>
+                <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
+                  <FaYoutube size={18} />
+                </a>
               </div>
-
-           
-
+            </div>
           </div>
-
         </div>
-
       </footer>
     </>
   );

@@ -33,22 +33,17 @@ const router = createBrowserRouter([
           if(!query){
             const res = await fetch("https://api.tvmaze.com/shows")
           
-          // console.log(url)
-          if(!res.ok){
-            throw new Error(" Movies data fetching problem")
+            // console.log(url)
+            if(!res.ok){
+              throw new Error(" Movies data fetching problem")
+            }
+            return res.json();
           }
-          return res.json();
-        }
-         const res = await fetch(
-    `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`
-  );
-
-  if (!res.ok) {
-    throw new Error("Search data fetching problem");
-  }
-
-  return res.json();
-
+            const res = await fetch(`https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`);
+            if (!res.ok) {
+              throw new Error("Search data fetching problem");
+            }
+            return res.json();
         },
         hydrateFallbackElement: <Loading/>
       },
