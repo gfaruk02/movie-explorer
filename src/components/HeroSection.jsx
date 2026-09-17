@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="max-w-2xl text-white">
 
           <p className="mb-4 text-sm font-semibold uppercase tracking-[4px] text-red-500 sm:text-base">
-            Welcome to MovieZone
+            Welcome to Movie Explorer
           </p>
 
           <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-7xl">

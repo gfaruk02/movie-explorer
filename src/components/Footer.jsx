@@ -14,12 +14,12 @@ const Footer = () => {
 
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             
-              <Link to="/">
-                Movie Zone
-              </Link>
+             <Link to="">
+         <img className="h-10 w-auto sm:h-12 md:h-14 lg:h-17 object-contain" src="https://i.ibb.co.com/BVfTb7jx/movie-explorer.png" alt="Movie Explorer" />
+        </Link>
 
               <p className="py-6 text-sm text-center dark:text-gray-400">
-                © 2026 Movie Zone. All rights reserved.
+                © 2026 Movie Explorer. All rights reserved.
               </p>
               <div className="flex flex-col gap-4 items-center justify-between font-semibold text-lg md:flex-row">
                 <h3>
