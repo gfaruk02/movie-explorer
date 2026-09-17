@@ -29,7 +29,7 @@ const MovieCard = ({movie}) => {
                     </div>
                 </div>
                 <div className="card-actions w-full">
-                    <button className="btn btn-primary w-full transition duration-300 hover:scale-105 hover:shadow-lg" onClick={()=>setShowModel(true)}>See Details</button>
+                    <button className="btn btn-primary w-full transition bg-gray-900 duration-300 hover:scale-105 hover:shadow-lg hover:bg-red-800"  onClick={()=>setShowModel(true)}>See Details</button>
                 </div>
              </div>
         </div>
