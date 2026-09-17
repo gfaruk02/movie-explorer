@@ -44,7 +44,7 @@ const MovieCard = ({movie}) => {
                     </div>
                     <div className="grid md:grid-cols-2">
                         <figure className="w-full">
-                            <img className="h-full max-h-[500px] w-full object-cover pt-2"
+                            <img className="h-full max-h-[500px] w-full object-contain md:object-cover pt-2"
                             src={movie.image?.original}
                             alt={movie.name} />
                         </figure>
