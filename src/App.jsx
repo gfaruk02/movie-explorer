@@ -27,14 +27,28 @@ const router = createBrowserRouter([
       {
         path:"/movies",
         Component: Movies,
-        loader: async()=>{
-          const url = await fetch("https://api.tvmaze.com/shows")
+        loader: async({request})=>{
+          const url = new URL(request.url)
+          const query = url.searchParams.get("q")
+          if(!query){
+            const res = await fetch("https://api.tvmaze.com/shows")
+          
           // console.log(url)
-          if(!url.ok){
+          if(!res.ok){
             throw new Error(" Movies data fetching problem")
           }
-          return url.json();
-          
+          return res.json();
+        }
+         const res = await fetch(
+    `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`
+  );
+
+  if (!res.ok) {
+    throw new Error("Search data fetching problem");
+  }
+
+  return res.json();
+
         },
         hydrateFallbackElement: <Loading/>
       },
