@@ -26,16 +26,16 @@ const Footer = () => {
                   Follow us on:
                 </h3>
                 <div className="flex items-center  gap-4">
-                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-sky-500">
+                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
                      <FaFacebookF size={18} />
                   </a>
-                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-sky-500">
+                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
                       <FaTwitter size={18} />
                   </a>
-                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-sky-500">
+                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
                      <FaInstagram size={18} />
                   </a>
-                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-sky-500">
+                  <a href="" className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 transition hover:bg-red-500">
                        <FaYoutube size={18} />
                   </a>
 
