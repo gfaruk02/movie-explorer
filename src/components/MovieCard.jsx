@@ -6,8 +6,8 @@ const MovieCard = ({movie}) => {
     const [showModel, setShowModel] = useState(false)
     // console.log("object", movie)
   return (
-    <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
-        <div className="card bg-base-100 w-96 shadow-sm">
+    <div className=" ">
+        <div className="card bg-base-100 w-full shadow-sm">
             <figure>
                 <img className=" w-full"
                 src={movie.image?.medium}

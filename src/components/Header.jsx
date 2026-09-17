@@ -5,10 +5,10 @@ import { Menu, X } from "lucide-react";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-     <nav className="bg-gray-950 text-white shadow-md"> 
+     <nav className="fixed top-0 left-0 z-50 w-full bg-gray-950 text-white shadow-md"> 
       <div className="max-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="">
-          Movie Zone
+         <img className="h-10 w-auto sm:h-12 md:h-14 lg:h-17 object-contain" src="https://i.ibb.co.com/DgLkgJF0/movie-zone.png" alt="Movie Zone" />
         </Link>
        {/* destop navbar */}
 
